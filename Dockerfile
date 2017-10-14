@@ -10,27 +10,26 @@ RUN apt-get update && \
     apt-get install -y\
     git\
     rrdtool\
-    net-snmp\
     net-snmp-utils\
     cronie\
-    php-ldap\
-    php-devel\
-    php \
+    php5-ldap\
+    php5-devel\
+    php5 \
     ntp\
     bison\
-    php-cli\
-    php-mysql\
-    php-common\
-    php-mbstring\
-    php-snmp\
+    php5-cli\
+    php5-mysql\
+    php5-common\
+    php5-mbstring\
+    php5-snmp\
     curl \
-    php-gd\
+    php5-gd\
     openssl\
     openldap\
     mod_ssl\
-    php-pear\
+    php5-pear\
     net-snmp-libs\
-    php-pdo && \
+    php5-pdo && \
     rm -rf /var/lib/apt/lists/*
 
 # Configure apache and required PHP modules
