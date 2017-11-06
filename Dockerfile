@@ -46,8 +46,6 @@ RUN docker-php-ext-configure mysqli --with-mysqli=mysqlnd && \
     echo ". /etc/environment" >> /etc/apache2/envvars && \
     a2enmod rewrite
 
-COPY php.ini /usr/local/etc/php/
-
 # copy phpipam sources to web dir
 RUN git clone https://github.com/phpipam/phpipam.git ${WEB_REPO} &&\
     cd ${WEB_REPO} &&\
